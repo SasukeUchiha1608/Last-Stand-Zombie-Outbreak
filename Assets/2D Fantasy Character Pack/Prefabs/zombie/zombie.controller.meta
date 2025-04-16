@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e74cf3bdd1e0ba48a7d03426e1863be
+timeCreated: 1506048764
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/zombie/zombie.controller
+  uploadId: 202343

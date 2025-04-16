@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8b354f425186f474bad71cccf0189ea9
+timeCreated: 1506045132
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/knight/knight.controller
+  uploadId: 202343

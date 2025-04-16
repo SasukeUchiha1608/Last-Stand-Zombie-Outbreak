@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a817e26c46001344391056a9ee0cb006
+timeCreated: 1506046090
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/mage_dark/area_casting.anim
+  uploadId: 202343

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3712785bb1da8ed459cd31a3cbecfdda
+timeCreated: 1506046194
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/mage_dark/run.anim
+  uploadId: 202343

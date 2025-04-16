@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c78964a868130e046832ee43d8b97d86
+timeCreated: 1506049099
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/zombie/zombie.prefab
+  uploadId: 202343

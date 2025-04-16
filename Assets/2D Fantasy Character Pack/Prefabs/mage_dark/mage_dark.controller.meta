@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b9fb2a0438fb9949b09398e4eff1fbc
+timeCreated: 1506046057
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/mage_dark/mage_dark.controller
+  uploadId: 202343

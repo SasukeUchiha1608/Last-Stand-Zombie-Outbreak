@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7e9f8a53a311204c843ba7dd37af9b4
+timeCreated: 1506048859
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/zombie/grow.anim
+  uploadId: 202343

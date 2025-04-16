@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abbfb4c5e5ddcaf4aafa39b1cbea4b72
+timeCreated: 1506043896
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101030
+  packageName: 2D Fantasy Character Pack Demo
+  packageVersion: 1.0
+  assetPath: Assets/2D Fantasy Character Pack/Prefabs/archer2/run.anim
+  uploadId: 202343
