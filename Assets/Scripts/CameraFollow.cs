@@ -4,7 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     [Header("Follow Settings")]
     public Transform target; // Drag your Player object here in Inspector
-    public float smoothSpeed = 0.125f; // Lower = smoother, Higher = snappier
+    public float smoothSpeed = 0.1f; // Lower = smoother, Higher = snappier
     public Vector3 offset = new Vector3(0, 0, -10); // Adjust Z for 2D
 
     void LateUpdate()

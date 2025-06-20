@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
-        Debug.Log("Enemy spawned at " + spawnPoint.position);
+        //Debug.Log("Enemy spawned at " + spawnPoint.position);
     }
 
 }

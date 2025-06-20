@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7161916002950565786}
   - component: {fileID: -6570628510286815950}
   - component: {fileID: -1701011762637375991}
+  - component: {fileID: 5509893162489435100}
   m_Layer: 0
   m_Name: zoimbie1_hold_0
   m_TagString: Enemy
@@ -189,12 +190,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6685459985650900109}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c501f03534b750b4184abb173bbb8094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  deadZombiePrefab: {fileID: 6685459985650900109, guid: 2ddae06e5a05c4a4dab91ee3c2aae3fb, type: 3}
 --- !u!114 &7696546925831252543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +241,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 4
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -291,3 +293,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ff4cca471097a429809883e38b0610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5509893162489435100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6685459985650900109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ac3e50896620945a662a13da023e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  damageCooldown: 1
