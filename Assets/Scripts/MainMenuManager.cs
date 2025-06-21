@@ -23,12 +23,12 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        // --- Load and apply saved volume ---
+        // --- Volume ---
         float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1f);
         volumeSlider.value = savedVolume;
         SetVolume(savedVolume);
 
-        // --- Filter and load unique resolution options (width x height) ---
+        // --- Resolution ---
         Resolution[] allResolutions = Screen.resolutions;
         var resolutionOptions = new System.Collections.Generic.List<string>();
         var uniqueResSet = new System.Collections.Generic.HashSet<string>();
@@ -54,23 +54,27 @@ public class MainMenuManager : MonoBehaviour
             }
         }
 
-        resolutions = uniqueResList.ToArray(); // Replace original with unique list
-
+        resolutions = uniqueResList.ToArray();
         resolutionDropdown.ClearOptions();
         resolutionDropdown.AddOptions(resolutionOptions);
 
-        // Load saved resolution index (or use current if not set)
         int savedResIndex = PlayerPrefs.GetInt("ResolutionIndex", currentResIndex);
         resolutionDropdown.value = savedResIndex;
         resolutionDropdown.RefreshShownValue();
+
+        // --- Fullscreen (IMPORTANT ORDER!) ---
+        bool isFullscreen = PlayerPrefs.GetInt("Fullscreen", Screen.fullScreen ? 1 : 0) == 1;
+
+        fullscreenToggle.onValueChanged.RemoveAllListeners(); // Just in case!
+        fullscreenToggle.isOn = isFullscreen; // Set value BEFORE adding listener
+        fullscreenToggle.onValueChanged.AddListener(SetFullscreen);
+
+        // Set resolution AFTER fullscreen is known
         SetResolution(savedResIndex);
 
-        // --- Fullscreen ---
-        bool isFullscreen = PlayerPrefs.GetInt("Fullscreen", Screen.fullScreen ? 1 : 0) == 1;
-        fullscreenToggle.isOn = isFullscreen;
+        // Set actual screen mode
         Screen.fullScreen = isFullscreen;
     }
-
 
     public void PlayGame()
     {
@@ -107,13 +111,23 @@ public class MainMenuManager : MonoBehaviour
     public void SetResolution(int index)
     {
         Resolution res = resolutions[index];
-        Screen.SetResolution(res.width, res.height, Screen.fullScreen);
+
+        // Read the most recent fullscreen setting from PlayerPrefs
+        bool isFullscreen = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
+
+        Screen.SetResolution(res.width, res.height, isFullscreen);
         PlayerPrefs.SetInt("ResolutionIndex", index);
     }
 
     public void SetFullscreen(bool isFullscreen)
     {
+
         Screen.fullScreen = isFullscreen;
         PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
+        PlayerPrefs.Save();
+
+        int index = resolutionDropdown.value;
+        SetResolution(index);
     }
+
 }

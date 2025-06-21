@@ -110,12 +110,8 @@ public class PlayerShooting : MonoBehaviour
 
             if (rb != null)
             {
-                // Calculate direction (mouse to player)
-                Vector2 mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-                Vector2 direction = (mousePos - (Vector2)firePoint.position).normalized;
-
                 // Fire bullet
-                rb.velocity = direction * bulletSpeed;
+                rb.velocity = firePoint.right * bulletSpeed;
             }
 
             // Auto-destroy bullet after time
